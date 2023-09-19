@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Ceylinim</title>
+    <style>
+        .modal-overlay {
+          transition: opacity 0.25s ease;
+        }
+      
+        .modal-container {
+          transition: opacity 0.25s ease;
+        }
+
+      </style>
+      
+</head>
+<body class="font-poppins bg-[url('/Pictures/arka.jpg')] bg-auto sm:bg-cover">
+  <h1 class="text-3xl p-5 sm:text-5xl font-thin text-white text-center sm:p-10">ceylinim</h1>
+    <!-- POP-UP -->
+    <div class="fixed inset-0 flex items-center justify-center z-10 hidden" id="myModal">
+        <div class="modal-overlay absolute inset-0 bg-pink-600 opacity-50"></div>
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+          <div class="modal-content py-4 text-left px-6">
+            <p class="text-2xl font-bold ">Emin misiniz?</p>
+            <p class="mt-2">Bu sayfa fazlasıyla aşk içerir devam etmek istediğinize emin misiniz?</p>
+      
+            <div class="flex justify-end pt-2">
+              <button class="px-4 text-black p-3 rounded-lg hover:text-red-400 mr-2 modal-close">Vazgeç</button>
+              <button class="px-4 bg-pink-500 p-3 rounded-lg text-white hover:bg-pink-400" id="confirmBtn">Eminim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="flex justify-center items-center" >
+            <div class="max-w-3xl md:max-w-4xl lg:max-w-5xl bg-slate-300 drop-shadow-2xl rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-pink-200 text-black">
+                <div class="flex flex-col items-center sm:flex sm:flex-row sm:items-center sm:justify-around" >
+                    <img src="/Pictures/tekne.jpg" class="h-56 m-4 sm:h-48 sm:mt-4 md:h-60 md:mt-6 lg:h-80 lg:mt-8 w-auto rounded-md" alt="tekne">
+                    <div class="">
+                        <p class="text-lg md:text-xl lg:text-2xl font-light mt-4 md:mt-6">hos geldin guzelligim 💜</p>
+                        <p class="text-base md:text-lg lg:text-xl font-medium mt-2.5 md:mt-5 lg:mt-10">birlikte gecen suremiz tam tamina:</p>
+                        <p class="text-xl md:text-2xl lg:text-3xl font-bold mt-2 md:mt-3 lg:mt-5" id="result"></p>
+                    </div>
+                </div>
+                <div class="sm:hidden flex flex-col justify-center items-center font-medium tracking-widest mt-5 text-sm">
+                    <div >
+                        <p id="subat" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./february.html">feb</a></p>
+                        <p id="mart" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./march.html">mar</a></p>
+                        <p id="nisan" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./april.html">apr</a></p>
+                        <p id="mayıs" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./may.html">may</a></p>
+                        <p id="haziran" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./june.html">june</a></p>
+                        <p id="temmuz" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./july.html">jul</a></p>
+                    </div>
+                    <div class="m-5 transition-all" >
+                        <p id="ağustos" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./august.html">aug</a></p>
+                        <p id="eylül" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./september.html">sept</a></p>
+                        <p id="ekim" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./october.html">oct</a></p>
+                        <p id="kasım" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./november.html">nov</a></p>
+                        <p id="aralık" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./december.html">dec</a></p>
+                        <p id="ocak" class="inline-block m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./january.html">jan</a></p>
+                    </div>
+                </div>
+                <div class="hidden sm:flex sm:justify-center font-medium tracking-widest mt-5 text-sm sm:text-sm md:text-sm lg:text-lg">
+                        <span id="şubat" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./february.html">feb</a></span>
+                        <span id="mart" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./march.html">mar</a></span>
+                        <span id="nisan" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./april.html">apr</a></span>
+                        <span id="mayıs" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./may.html">may</a></span>
+                        <span id="haziran" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./june.html">june</a></span>
+                        <span id="temmuz" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./july.html">jul</a></span>
+                        <span id="ağustos" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./august.html">aug</a></span>
+                        <span id="eylül" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./september.html">sept</a></span>
+                        <span id="ekim" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./october.html">oct</a></span>
+                        <span id="kasım" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./november.html">nov</a></span>
+                        <span id="aralık" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./december.html">dec</a></span>
+                        <span id="ocak" class="m-1 sm:m-3 md:m-4 lg:m-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"> <a class="open-modal" href="./january.html">jan</a></span>
+                </div>
+            </div>
+          </div>
+          <div class="flex justify-center mt-10 mb-10" >
+            <a href="./sasirtbeni.html"><button class="px-4 bg-pink-500 p-3 rounded-lg text-white hover:bg-pink-400" id="confirmBtn">Şaşırmak istiyorsan tıkla 😁 </button></a>
+          </div>
+
+
+
+        
+
+</body>
+<script src="/app.js"></script>
+</html> 
