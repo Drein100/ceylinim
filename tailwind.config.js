@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         "poppins": ['Poppins', "sans-serif"],
-      }
+      },
+      backgroundImage: theme => ({
+        'img': "url('/Pictures/arka.jpg')"
+      })
     },
     
   },
