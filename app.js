@@ -40,6 +40,7 @@ const anniversaryDate = new Date("2023-02-01");
         const confirmBtn = document.getElementById('confirmBtn');
         confirmBtn.addEventListener('click', () => {
           window.location.href = targetLink;
+          modal.classList.add("hidden");
         });
 
         
